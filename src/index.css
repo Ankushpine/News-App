@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(219, 206, 189);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.newscontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  color: #e73e3e;
+  user-select: none;
+}
+
+.news {
+  height: 350px;
+  width: 90%;
+  background-color: rgb(178, 194, 168);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.news img {
+  height: 150px;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.fullNews {
+  position:absolute;
+  height: 300vh;
+  width: 100vw;
+  background-color: rgb(160, 83, 233);
+  top: 0;
+  z-index: 100;
+}
+
+.cross {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+}
+
+.fullNews img {
+  height: 100vh;
+  width: 95%;
+}
+
+.fullNews p {
+  font-size: 20px;
+}
+
+.signUpContainer {
+  height: 400px;
+  width: 500px;
+  background-color: rgb(117, 179, 99);
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.signUpContainer h1 {
+  font-size: 40px;
+}
+
+.signUpContainer input {
+  display: block;
+  margin: 0 0 10px 0px;
+  height: 27px;
+  width: 360px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.signUpContainer button {
+  font-size: 16px;
+  margin-left: 35%;
+}
+
+.error {
+  color: rgb(218, 34, 10);
+  font-size: 15px;
+}
